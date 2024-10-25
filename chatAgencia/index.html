@@ -12,64 +12,82 @@
         <img src="./assets/images/Carta Kit(A5).png" alt="Logo agencia do professor">
     </header>
     <main>
-        <div id="pipeline">
-            <form id="pesquisas">
-                <h1>Oque você está procurando?</h1>
-                <div id="pesqInit">
-                    <input type="radio" id="gravacao" name="pesq">
-                    <label for="gravacao">Gravações</label>
+        <div id="prov_main">
+            <div id="pipeline">
+                <form id="pesquisas">
+                    <h1>Oque você está procurando?</h1>
+                    <div id="pesqInit">
+                        <input type="radio" id="gravacao" name="pesq">
+                        <label for="gravacao">Gravações</label>
+                        
+                        <input type="radio" id="fotos" name="pesq">
+                        <label for="fotos">Fotos</label>
+            
+                        <input type="radio" id="videos" name="pesq">
+                        <label for="videos">Videos</label>
+
+                        <input type="radio" id="infoCoords" name="pesq">
+                        <label for="infoCoords">Informações dos coordenadores</label>
+                    </div>
+
+                    <div id="divPesqGravacao" class="hidden">
+                        <h1> Oque de gravação em especifico?</h1>
+
+                        <input type="radio" id="midia" name="grava">
+                        <label for="midia">Mídia Kit</label>                    
+
+                        <input type="radio" id="aula" name="grava">
+                        <label for="aula">Aula (B-roll)</label>
+                    </div>
+
+                    <div id="textApoio" class="hidden">
+                        <h1> Selecione as opções:</h1>
+                    </div>
                     
-                    <input type="radio" id="fotos" name="pesq">
-                    <label for="fotos">Fotos</label>
-          
-                    <input type="radio" id="videos" name="pesq">
-                    <label for="videos">Videos</label>
+                    <div id="divPesqCurso" class="hidden">
+                        <label for="pesqCurso">Nome do curso: </label>
+                        <select name="cursos" id="pesqCurso">
+                            <option value="PG MAMA">PG MAMA</option>
+                            <option value="PG USME">PG USME</option>
+                            <option value="PG USPE">PG USPE</option>
+                            <option value="PG DOR1">PG DOR1</option>
+                            <option value="PG DOR2">PG DOR2</option>
+                            <option value="US MESQ">US MESQ</option>
+                        </select>
+                    </div>
 
-                    <input type="radio" id="infoCoords" name="pesq">
-                    <label for="infoCoords">Informações dos coordenadores</label>
+                    <div id="divPesqNome" class="hidden">
+                        <label for="pesqCoord">Nome coord: </label>
+                        <select name="cursos" id="pesqCoord">
+                            <option value="PG MAMA">PG MAMA</option>
+                            <option value="PG USME">PG USME</option>
+                            <option value="PG USPE">PG USPE</option>
+                            <option value="PG DOR1">PG DOR1</option>
+                            <option value="PG DOR2">PG DOR2</option>
+                            <option value="US MESQ">US MESQ</option>
+                        </select>
+                    </div>
+
+                    <div id="divPesqBU" class="hidden">
+                        <h1>Em qual BU você está procurando?</h1>
+                        <input type="radio" id="Cetrus" name="BU">
+                        <label for="Cetrus">Cetrus</label>
+                        
+                        <input type="radio" id="Sanar" name="BU">
+                        <label for="Sanar">Sanar</label>
+            
+                        <input type="radio" id="Fellow" name="BU">
+                        <label for="Fellow">Fellow</label>
+                    </div>
+
+                    <div id="btnPesq" class="hidden">
+                        <button type="submit">Pesquisar</button>
+                    </div>
+                </form>
+
+                <div id="Resultados encontrados">
+
                 </div>
-
-                <div id="divPesqGravacao" class="hidden">
-                    <h1> Oque de gravação em especifico?</h1>
-
-                    <input type="radio" id="midia" name="grava">
-                    <label for="midia">Mídia Kit</label>                    
-
-                    <input type="radio" id="aula" name="grava">
-                    <label for="aula">Aula (B-roll)</label>
-                </div>
-
-                <div id="divPesqCurso" class="hidden">
-                    <label for="pesqCurso">Nome do curso</label>
-                    <select name="cursos" id="pesqCurso">
-                        <option value="PG MAMA">PG MAMA</option>
-                        <option value="PG USME">PG USME</option>
-                        <option value="PG USPE">PG USPE</option>
-                        <option value="PG DOR1">PG DOR1</option>
-                        <option value="PG DOR2">PG DOR2</option>
-                        <option value="US MESQ">US MESQ</option>
-                    </select>
-                </div>
-
-                <div id="divPesqNome" class="hidden">
-                    <label for="pesqCoord">Nome coord</label>
-                    <select name="cursos" id="pesqCoord">
-                        <option value="PG MAMA">PG MAMA</option>
-                        <option value="PG USME">PG USME</option>
-                        <option value="PG USPE">PG USPE</option>
-                        <option value="PG DOR1">PG DOR1</option>
-                        <option value="PG DOR2">PG DOR2</option>
-                        <option value="US MESQ">US MESQ</option>
-                    </select>
-                </div>
-
-                <div id="btnPesq" class="hidden">
-                    <button type="submit">Pesquisar</button>
-                </div>
-            </form>
-
-            <div id="Resultados encontrados">
-
             </div>
         </div>
     </main>

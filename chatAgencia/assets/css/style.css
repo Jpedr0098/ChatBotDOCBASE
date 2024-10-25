@@ -43,4 +43,25 @@ form div, label, select, option, button, h1{
 
 #pesqInit input {
     margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+#divPesqGravacao input {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+#divPesqCurso select, label {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+#divPesqNome select, label {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+#divPesqBU input {
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
